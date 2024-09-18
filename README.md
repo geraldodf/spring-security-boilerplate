@@ -115,6 +115,7 @@ public class SecurityConfiguration {
 }
 
 ```
+You can se an example [here](https://github.com/geraldodf/simplified-payment/blob/master/src/main/java/com/simplifiedpayment/infra/security/SecurityConfiguration.java)
 
 Here, CSRF is disabled (often necessary for stateless APIs), sessions are stateless, and different endpoints are protected by roles.
 
@@ -191,6 +192,8 @@ You need a password encoder for hashing passwords. Add the following in Security
 ```
 
 #### 9. Register New Users
+
+This method should be placed on the AuthenticationController.
 
 ```java
 @PostMapping("/register")
